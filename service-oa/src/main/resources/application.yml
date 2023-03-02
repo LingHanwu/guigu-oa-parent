@@ -3,3 +3,10 @@ spring:
     name: service-oa
   profiles:
     active: dev
+
+
+knife4j:
+  enable: true
+  setting:
+    language: zh_cn
+    swagger-model-name: 实体类列表
