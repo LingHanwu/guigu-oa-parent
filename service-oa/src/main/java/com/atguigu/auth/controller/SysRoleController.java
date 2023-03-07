@@ -1,6 +1,7 @@
 package com.atguigu.auth.controller;
 
 import com.atguigu.auth.service.SysRoleService;
+import com.atguigu.exception.GuiguException;
 import com.atguigu.model.system.SysRole;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
@@ -31,6 +32,11 @@ public class SysRoleController {
     @Operation(summary = "获取全部角色列表")
     @GetMapping("findAll")
     public Result<List<SysRole>> findAll() {
+        try {
+            int a = 10/0;
+        }catch(Exception e) {
+            throw new GuiguException(20001,"出现自定义异常");
+        }
         List<SysRole> roleList = sysRoleService.list();
         return Result.ok(roleList);
     }
