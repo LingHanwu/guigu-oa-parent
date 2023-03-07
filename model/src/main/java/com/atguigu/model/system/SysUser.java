@@ -1,9 +1,9 @@
 package com.atguigu.model.system;
 
+import com.atguigu.model.base.BaseEntity;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
-
-import com.atguigu.model.base.BaseEntity;
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 
 import java.util.List;
@@ -11,46 +11,56 @@ import java.util.List;
 @Data
 @TableName("sys_user")
 public class SysUser extends BaseEntity {
-	
-	private static final long serialVersionUID = 1L;
 
-	@TableField("username")
-	private String username;
+    private static final long serialVersionUID = 1L;
 
-	@TableField("password")
-	private String password;
+    @Schema(description = "用户名")
+    @TableField("username")
+    private String username;
 
-	@TableField("name")
-	private String name;
+    @Schema(description = "密码")
+    @TableField("password")
+    private String password;
 
-	@TableField("phone")
-	private String phone;
+    @Schema(description = "姓名")
+    @TableField("name")
+    private String name;
 
-	@TableField("head_url")
-	private String headUrl;
+    @Schema(description = "手机")
+    @TableField("phone")
+    private String phone;
 
-	@TableField("dept_id")
-	private Long deptId;
+    @Schema(description = "头像地址")
+    @TableField("head_url")
+    private String headUrl;
 
-	@TableField("post_id")
-	private Long postId;
+    @Schema(description = "部门id")
+    @TableField("dept_id")
+    private Long deptId;
 
-	@TableField("description")
-	private String description;
+    @Schema(description = "岗位id")
+    @TableField("post_id")
+    private Long postId;
 
-	@TableField("open_id")
-	private String openId;
+    @Schema(description = "描述")
+    @TableField("description")
+    private String description;
 
-	@TableField("status")
-	private Integer status;
+    @Schema(description = "openId")
+    @TableField("open_id")
+    private String openId;
 
-	@TableField(exist = false)
-	private List<SysRole> roleList;
-	//岗位
-	@TableField(exist = false)
-	private String postName;
-	//部门
-	@TableField(exist = false)
-	private String deptName;
+    @Schema(description = "状态（1：正常 0：停用）")
+    @TableField("status")
+    private Integer status;
+
+    @TableField(exist = false)
+    private List<SysRole> roleList;
+    //岗位
+    @TableField(exist = false)
+    private String postName;
+    //部门
+    @TableField(exist = false)
+    private String deptName;
 }
 
