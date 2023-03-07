@@ -2,11 +2,10 @@ package com.atguigu.auth.controller;
 
 import com.atguigu.auth.service.SysRoleService;
 import com.atguigu.model.system.SysRole;
-import com.atguigu.vo.system.SysRoleQueryVo;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import common.result.Result;
+import com.gtguigu.common.result.Result;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;

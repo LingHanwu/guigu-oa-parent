@@ -1,4 +1,4 @@
-package common.jwt;
+package com.gtguigu.common.jwt;
 
 import io.jsonwebtoken.*;
 import org.springframework.util.StringUtils;

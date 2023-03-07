@@ -1,4 +1,4 @@
-package com.atguigu.auth.config;
+package com.atguigu.knife4j;
 
 /**
  * projectName:  guigu-oa-parent
