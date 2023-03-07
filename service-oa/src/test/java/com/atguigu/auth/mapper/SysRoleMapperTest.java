@@ -34,7 +34,7 @@ public class SysRoleMapperTest {
     @Test
     void test01() {
         //设置分页参数
-        Page<SysRole> page = new Page<>(1, 5);
+        Page<SysRole> page = new Page<>(1, 1);
         sysRoleMapper.selectPage(page, null);
 //获取分页数据
         List<SysRole> list = page.getRecords();

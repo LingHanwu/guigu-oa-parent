@@ -1,9 +1,8 @@
-package com.atguigu.common.config.mp;
+package com.atguigu.auth.config;
 
 import com.baomidou.mybatisplus.annotation.DbType;
 import com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor;
 import com.baomidou.mybatisplus.extension.plugins.inner.PaginationInnerInterceptor;
-import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -16,7 +15,6 @@ import org.springframework.context.annotation.Configuration;
  * description:
  */
 @Configuration
-@MapperScan(basePackages = {"com.atguigu.auth.mapper", "com.atguigu.process.mapper", "com.atguigu.wechat.mapper"})
 public class MybatisPlusConfig {
 
     /**

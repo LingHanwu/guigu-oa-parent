@@ -13,16 +13,8 @@
     <packaging>pom</packaging>
     <modules>
         <module>common-util</module>
-        <module>service-util</module>
     </modules>
 
-    <dependencies>
-        <dependency>
-            <groupId>com.atguigu</groupId>
-            <artifactId>common-util</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-    </dependencies>
 
 
     <properties>
